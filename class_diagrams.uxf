@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>30</x><y>10</y><w>710</w><h>280</h></coordinates><panel_attributes>Writer
+
+--
+- config: Dict[str, Any]
+- config_file: str
+- logfile: str
+- outdir: str
+- outfile: str
+- template_path: str
+- verbose: bool
+- map: bool
+--
+- _get_template_field(annotation: Object, annotation_type: str) -&gt; Optional[str]
+- _get_field_map_key(template_field: str) -&gt; Optional[str]
+- _get_value(field_map_key: str, kwargs: Dict[str, Any]) -&gt; Union[str, int]
++ write_file(kwargs: Dict[str, Any]) -&gt; None
+- _check_missing_fields(found_lookup: Dict[str, bool], is_patient_name_found: bool, is_provider_name_found: bool) -&gt; None</panel_attributes><additional_attributes></additional_attributes></element></diagram>
