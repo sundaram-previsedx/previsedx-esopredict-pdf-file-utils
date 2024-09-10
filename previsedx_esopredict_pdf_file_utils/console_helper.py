@@ -17,6 +17,7 @@ def print_green(msg: str = None) -> None:
 
     console.print(f"[bold green]{msg}[/]")
 
+
 def print_yellow(msg: str = None) -> None:
     if msg is None or msg == "":
         raise Exception("msg was not defined")

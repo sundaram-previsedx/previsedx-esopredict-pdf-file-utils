@@ -44,7 +44,6 @@ def execute_cmd(
     if stderr_file is None:
         stderr_file = _derive_std_file(cmd, outdir, "stderr")
 
-
     if os.path.exists(stdout_file):
         logging.info(
             f"STDOUT file '{stdout_file}' already exists so will delete it now"
@@ -90,6 +89,7 @@ def execute_cmd(
 
     return stdout_file
 
+
 def _derive_std_file(cmd: str, outdir: str, std_type: str) -> str:
     """Derive the path to the file where STDOUT or STDERR will be written to.
 
@@ -110,7 +110,7 @@ def _derive_std_file(cmd: str, outdir: str, std_type: str) -> str:
 
     std_file = os.path.join(outdir, f"{basename}.{std_type}")
     logging.info(
-        f"stdout_file was not specified and therefore was set to '{stdout_file}'"
+        f"stdout_file was not specified and therefore was set to '{std_file}'"
     )
 
     return std_file

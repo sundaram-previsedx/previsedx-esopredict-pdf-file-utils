@@ -5,7 +5,7 @@
 
 import unittest
 
-from previsedx_esopredict_pdf_file_utils import previsedx_esopredict_pdf_file_utils
+from previsedx_esopredict_pdf_file_utils import previsedx_esopredict_pdf_file_utils  # noqa: F401
 
 
 class TestPrevisedx_esopredict_pdf_file_utils(unittest.TestCase):

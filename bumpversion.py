@@ -47,6 +47,7 @@ DEFAULT_PROJECT_DIR = os.getcwd()
 
 g_verbose = DEFAULT_VERBOSE
 
+
 def backup_file(file: str = None) -> Optional[str]:
     """Backup a file."""
     if os.path.exists(file):
@@ -59,6 +60,7 @@ def backup_file(file: str = None) -> Optional[str]:
         print(f"{file} does not exist so will not backup it")
         return None
 
+
 def restore_file(file: str = None) -> None:
     if os.path.exists(file):
         if not file.endswith(".bak"):
@@ -70,6 +72,7 @@ def restore_file(file: str = None) -> None:
         print(f"Restored '{backup_file}' to '{file}'")
     else:
         print(f"{file} does not exist so will not restore it")
+
 
 def _execute_cmd(
     cmd: str,
@@ -159,6 +162,7 @@ def _execute_cmd(
         logging.info("stderr is: " + stderr_file)
 
     return stdout_file
+
 
 def validate_verbose(ctx, param, value):
     if value is None:

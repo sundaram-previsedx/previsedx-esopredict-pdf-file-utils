@@ -220,4 +220,3 @@ def get_file_list(indir: str = None, extension: str = None) -> List[str]:
                     file_list.append(filepath)
 
     return file_list
-
