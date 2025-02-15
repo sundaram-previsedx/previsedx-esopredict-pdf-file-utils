@@ -65,5 +65,5 @@ writer.write_file(**lookup)
 
 ## References
 
-[GitHub](https://github.com/sundaram-previsedx/previsedx-esopredict-pdf-file-utils)
-[PYPI](https://pypi.org/project/previsedx-esopredict-pdf-file-utils/)
+* [GitHub](https://github.com/sundaram-previsedx/previsedx-esopredict-pdf-file-utils)
+* [PYPI](https://pypi.org/project/previsedx-esopredict-pdf-file-utils/)
